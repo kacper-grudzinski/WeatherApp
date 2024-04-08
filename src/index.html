@@ -1,15 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WeatherApp</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <main>
-        <header>
-            <h1>Weather</h1>
-        </header>
+      <header>
+        <h1>WeatherApp</h1>
+      </header>
+      <div class="container">
+        <div class="left">
+          <div class="img-gradient"></div>
+          <div class="inf">
+            <h2>Monday</h2>
+            <span>08 April 2024</span>
+            <div>
+              <i class="bx bx-current-location"></i><span>Warsaw, PL</span>
+            </div>
+          </div>
+          <div class="weather">
+            <i class="bx bx-cloud"></i>
+            <h2 class="weather-temp">20°C</h2>
+            <h3>Cloudy</h3>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="details">
+            <span class="title">Humidity</span>
+            <span class="value">56%</span>
+          </div>
+          <div class="details">
+            <span class="title">Wind speed</span>
+            <span class="value">4km/h</span>
+          </div>
+          <div class="details">
+            <span class="title">Precipitation</span>
+            <span class="value">5%</span>
+          </div>
+        </div>
+
+        <ul class="days">
+          <li>
+            <span><i class="bx bx-sun"></i></span>
+            <span>Sun</span>
+            <span class="dat-temp">22°C</span>
+          </li>
+          <li>
+            <span><i class="bx bx-cloud"></i></span>
+            <span>Sat</span>
+            <span class="dat-temp">19°C</span>
+          </li>
+          <li>
+            <span><i class="bx bx-cloud-rain"></i></span>
+            <span>Fri</span>
+            <span class="dat-temp">17°C</span>
+          </li>
+          <li>
+            <span><i class="bx bx-sun"></i></span>
+            <span>Thu</span>
+            <span class="dat-temp">21°C</span>
+          </li>
+        </ul>
+
+        <div class="btn-container">
+                <button class="loc-btn">Search location</button>
+        </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>
